@@ -2,48 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3250e3a8-4891-4588-b933-08e34f655150" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icon@144.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icon@192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icon@48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icon@512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icon@96.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/launch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WeatherIcon.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useWeatherAPI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/airFlow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/cog.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/day-clear.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/day-cloudy-fog.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/day-cloudy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/day-fog.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/day-partially-clear-with-rain.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/day-snowing.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/day-thunderstorm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/humid.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/loading.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/night-clear.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/night-cloudy-fog.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/night-cloudy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/night-fog.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/night-partially-clear-with-rain.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/night-snowing.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/night-thunderstorm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/rain.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/refresh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/helpers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/sunrise-sunset.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/WeatherCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useWeatherAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useWeatherAPI.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,18 +96,38 @@
       <workItem from="1611890580863" duration="622000" />
       <workItem from="1611903657821" duration="848000" />
       <workItem from="1611909300780" duration="533000" />
-      <workItem from="1612231458207" duration="9564000" />
+      <workItem from="1612231458207" duration="10517000" />
     </task>
+    <task id="LOCAL-00001" summary="重構專案">
+      <created>1612250053738</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612250053738</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="重構專案" />
+    <option name="LAST_COMMIT_MESSAGE" value="重構專案" />
   </component>
   <component name="WindowStateProjectService">
     <state x="615" y="251" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1611646061836">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="615" y="251" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1440.900@0.0.1440.900" timestamp="1611646061836" />
+    <state x="303" y="48" key="CommitChangelistDialog2" timestamp="1612250053520">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="303" y="48" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1612250053520" />
+    <state x="574" y="350" key="Github.ShareDialog" timestamp="1612250092551">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="574" y="350" key="Github.ShareDialog/0.0.1440.900@0.0.1440.900" timestamp="1612250092551" />
     <state width="1398" height="317" key="GridCell.Tab.0.bottom" timestamp="1611890083004">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -215,6 +196,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="379" y="103" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1611646488300" />
+    <state x="320" y="178" key="Vcs.Push.Dialog.v2" timestamp="1612250074633">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="178" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1612250074633" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612249997970">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

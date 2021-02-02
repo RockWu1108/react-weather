@@ -1,12 +1,9 @@
 import fetch from "cross-fetch";
 import {useState , useEffect , useCallback} from 'react';
-const useWeatherAPI = ()=>{
 
-}
+const fetchCurrentWeather = ({authorizationKey , locationName}) =>{
 
-const fetchCurrentWeather = () =>{
-
-    return fetch(`https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0003-001?Authorization=${AUTHORIZATION_KEY}&locationName=${LOCATION_NAME}`)
+    return fetch(`https://opendata.cwb.gov.tw/api/v1/rest/datastore/O-A0003-001?Authorization=${authorizationKey}&locationName=${locationName}`)
         .then((response) => response.json())
         .then((data) => {
             const locationData = data.records.location[0];
@@ -31,9 +28,9 @@ const fetchCurrentWeather = () =>{
         .catch((error)=> console.log(error))
 }
 
-const fetchWeatherForecast = ()=>{
+const fetchWeatherForecast = ({authorizationKey , cityName})=>{
 
-    return  fetch(`https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=${AUTHORIZATION_KEY}&locationName=${LOCATION_NAME_FORECAST}`)
+    return  fetch(`https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=${authorizationKey}&locationName=${cityName}`)
         .then((response) => response.json())
         .then((data) => {
             const LocationData = data.records.location[0];
@@ -54,4 +51,40 @@ const fetchWeatherForecast = ()=>{
         });
 }
 
+const useWeatherAPI = ({locationName , cityName ,authorizationKey})=>{
+    const[weatherElement , setWeatherElement] = useState({
+        locationName : '',
+        description : '',
+        temperature : 0 ,
+        windSpeed : 0,
+        rainPossibility : 0,
+        weatherCode : 0,
+        observationTime : new Date(),
+        comfortAbility :'',
+        isLoading : true
+    })
+    const  fetchData = useCallback(async () =>{
+        setWeatherElement((prevState) =>({
+            ...prevState,
+            isLoading: true
+        }));
+
+        const [currentWeather , weatherForecast] = await Promise.all([
+            fetchCurrentWeather({authorizationKey ,locationName}),
+            fetchWeatherForecast({authorizationKey,cityName})
+        ] , [authorizationKey ,cityName ,locationName]);
+
+        setWeatherElement({
+            ...currentWeather ,
+            ...weatherForecast,
+            isLoading: false
+        });
+
+    },[]);
+    useEffect(()=>{
+        fetchData();
+    },[fetchData]);
+
+    return [weatherElement , fetchData];
+}
 export default useWeatherAPI;
