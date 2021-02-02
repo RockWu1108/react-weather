@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import {ReactComponent as CogIcon} from "../src/images/cog.svg";
 
 
  const Container = styled.div`
@@ -128,9 +129,18 @@ const theme = {
  },
 };
 
+const Cog = styled(CogIcon)`
+  position : absolute;
+  top : 30px ;
+  right : 30px;
+  width : 30px;
+  height : 30px;
+  cursor : pointer;
+`;
+
 export  {
  theme,Refresh,Rain,AirFlow,Container,Celsius,WeatherCardWrapper,
- Location,Description,CurrentWeather,Temperature
+ Location,Description,CurrentWeather,Temperature , Cog
 }
 
 

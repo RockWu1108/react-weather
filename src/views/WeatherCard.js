@@ -7,10 +7,9 @@ import { ReactComponent as RainIcon } from './../images/rain.svg';
 import { ReactComponent as RefreshIcon } from './../images/refresh.svg';
 import { ReactComponent as LoadingIcon } from './../images/loading.svg';
 import {Location,Description,CurrentWeather,Temperature,Celsius
-    ,AirFlow ,Rain ,Refresh , WeatherCardWrapper} from "../layout";
-const WeatherCard = ({ weatherElement, moment, fetchData }) => {
+    ,AirFlow ,Rain ,Refresh , WeatherCardWrapper ,Cog} from "../layout";
+const WeatherCard = ({ weatherElement, moment, fetchData,handleCurrentPage}) => {
     //解構變數
-    console.log(weatherElement);
 
     const {
         isLoading,
@@ -25,6 +24,7 @@ const WeatherCard = ({ weatherElement, moment, fetchData }) => {
 
     return (
         <WeatherCardWrapper>
+            <Cog onClick={()=>handleCurrentPage('WeatherSetting')}/>
             <Location>{locationName}</Location>
             <Description>
                 {description} {comfortAbility}
