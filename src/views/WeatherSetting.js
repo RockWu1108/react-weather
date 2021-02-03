@@ -1,5 +1,5 @@
 // ./src/views/WeatherSetting.js
-import React, { useState } from 'react';
+import React, { useState , useRef } from 'react';
 import styled from '@emotion/styled';
 import { availableLocations } from '../utils/helpers';
 
@@ -96,24 +96,39 @@ const Save = styled.button`
 // ./src/views/WeatherSetting.js
 // ...
 
-const WeatherSetting = ({handleCurrentPage}) => {
+const WeatherSetting = ({handleCurrentPage ,handleCurrentCity ,cityName}) => {
+
+        const [localName , setLocalName] = useState(cityName);
+
+        const handleChange = (e) => {
+            setLocalName(e.target.value);
+        };
+        const handleSave = () =>{
+            console.log("localName : ",localName);
+            handleCurrentCity(localName);
+            handleCurrentPage('WeatherCard');
+            localStorage.setItem('cityName' , localName); //將資料儲存於瀏覽器中
+        }
+
+
+
     return (
         <WeatherSettingWrapper>
             <Title>設定</Title>
             <StyledLabel htmlFor="location">地區</StyledLabel>
 
-            <StyledSelect id="location" name="location">
+            <StyledSelect id="location" name="location" value={localName} onChange={handleChange}>
                 {
-                    availableLocations.map((location) =>(
-                        <option value={location.cityName} key={location.cityName}>
-                            {location.cityName}
+                    availableLocations.map(({cityName}) =>(
+                        <option value={cityName} key={cityName}>
+                            {cityName}
                         </option>
                     ))}
             </StyledSelect>
 
             <ButtonGroup>
                 <Back onClick={()=>{handleCurrentPage('WeatherCard')}}>返回</Back>
-                <Save>儲存</Save>
+                <Save onClick={handleSave}>儲存</Save>
             </ButtonGroup>
         </WeatherSettingWrapper>
     );

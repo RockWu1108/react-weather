@@ -63,6 +63,7 @@ const useWeatherAPI = ({locationName , cityName ,authorizationKey})=>{
         comfortAbility :'',
         isLoading : true
     })
+
     const  fetchData = useCallback(async () =>{
         setWeatherElement((prevState) =>({
             ...prevState,
@@ -72,7 +73,7 @@ const useWeatherAPI = ({locationName , cityName ,authorizationKey})=>{
         const [currentWeather , weatherForecast] = await Promise.all([
             fetchCurrentWeather({authorizationKey ,locationName}),
             fetchWeatherForecast({authorizationKey,cityName})
-        ] , [authorizationKey ,cityName ,locationName]);
+        ]);
 
         setWeatherElement({
             ...currentWeather ,
@@ -80,7 +81,8 @@ const useWeatherAPI = ({locationName , cityName ,authorizationKey})=>{
             isLoading: false
         });
 
-    },[]);
+    },[authorizationKey, cityName, locationName]);
+
     useEffect(()=>{
         fetchData();
     },[fetchData]);
