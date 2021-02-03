@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3250e3a8-4891-4588-b933-08e34f655150" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/service-Worker.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +99,7 @@
       <workItem from="1611890580863" duration="622000" />
       <workItem from="1611903657821" duration="848000" />
       <workItem from="1611909300780" duration="533000" />
-      <workItem from="1612231458207" duration="23260000" />
+      <workItem from="1612231458207" duration="23546000" />
     </task>
     <task id="LOCAL-00001" summary="重構專案">
       <created>1612250053738</created>
@@ -142,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612322532487</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="final">
+      <created>1612323197836</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1612323197836</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,11 +168,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="615" y="251" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1440.900@0.0.1440.900" timestamp="1611646061836" />
-    <state x="303" y="70" key="CommitChangelistDialog2" timestamp="1612322532412">
+    <state x="303" y="70" key="CommitChangelistDialog2" timestamp="1612323197770">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="303" y="48" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1612254549047" />
-    <state x="303" y="70" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1612322532412" />
+    <state x="303" y="70" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1612323197770" />
     <state x="574" y="350" key="Github.ShareDialog" timestamp="1612250092551">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -237,11 +245,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="379" y="103" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1611646488300" />
-    <state x="320" y="196" key="Vcs.Push.Dialog.v2" timestamp="1612320980005">
+    <state x="320" y="196" key="Vcs.Push.Dialog.v2" timestamp="1612323199400">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="320" y="178" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1612254551953" />
-    <state x="320" y="196" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1612320980005" />
+    <state x="320" y="196" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1612323199400" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612249997970">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
